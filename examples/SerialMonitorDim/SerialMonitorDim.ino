@@ -84,9 +84,10 @@ void loop() {
 
   if (preVal != outVal)
   {
-    USE_SERIAL.print("% lampValue -> ");
+    USE_SERIAL.print("lampValue -> ");
     printSpace(dimmer.getPower());
     USE_SERIAL.print(dimmer.getPower());
+    USE_SERIAL.println("%");
 
   }
   delay(50);
