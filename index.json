@@ -1,0 +1,64 @@
+{
+  "packages":
+  [
+    {
+      "name": "RBDdimmer",
+      "maintainer": "RobotDyn",
+      "websiteURL": "https://robotdyn.com",
+      "help":
+      {
+        "online": "https://robotdyn.com"
+      },
+      "platforms":
+      [
+        {
+          "name": "Atmel SAMD21 Xplained-pros",
+          "architecture": "samd",
+          "version": "3.0",
+          "category": "Contributed",
+          "url": "https://github.com/AtmelUniversityFrance/atmel-samd21-xpro-boardmanagermodule/releases/download/v0.3.0/atmel-samd21-xpro-boardmanagermodule-0.3.0.tar.bz2",
+          "archiveFileName": "atmel-samd21-xpro-boardmanagermodule-0.3.0.tar.bz2",
+          "checksum": "SHA-256:70b351f50e4408bf4384519ffcc3547fbf27612fc551dbd66a7d2d48ea8fafdc",
+          "size": "55213",
+          "boards": [
+            {
+              "name": "atmel_samd21_xpro_v1"
+            },
+            {
+              "name": "atmel_samr21_xpro"
+            },
+            {
+              "name": "atmel_samw25_xpro"
+            }
+          ],
+          "toolsDependencies":
+          [
+            {
+              "packager": "arduino",
+              "name": "arm-none-eabi-gcc",
+              "version": "4.8.3-2014q1"
+            },
+            {
+              "packager": "arduino",
+              "name": "bossac",
+              "version": "1.6.1-arduino"
+            },
+            {
+              "packager": "arduino",
+              "name": "openocd",
+              "version": "0.9.0-arduino"
+            },
+            {
+              "packager": "arduino",
+              "name": "CMSIS",
+              "version": "4.0.0-atmel"
+            }
+          ]
+        }
+      ],
+      "tools":
+      [
+      ]
+    }
+  ]
+}
