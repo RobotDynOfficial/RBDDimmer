@@ -13,8 +13,12 @@
 	#include "samd/RBDmcuSAMD21.h"
 #elif defined(ARDUINO_ARCH_SAM)
 	#include "sam/RBDmcuSAM.h"
+#elif defined(ARDUINO_ARCH_STM32F1)
+	#include "stm32duino/STM32F1/RBDmcuSTM32F1.h"
+#elif defined(ARDUINO_ARCH_STM32F4)
+	#include "stm32duino/STM32F4/RBDmcuSTM32F4.h"
 #else 
-	#error "This library only supports boards with an AVR, ESP32, ESP8266, SAMD processor."
+	#error "This library only supports boards with an AVR, ESP32, ESP8266, SAMD, SAM, STM32F1/F4 processor."
 #endif
 
 typedef enum
@@ -28,6 +32,8 @@ typedef enum
     OFF = false,
     ON = true
 } ON_OFF_typedef;
+
+#define ALL_DIMMERS 30
 
 class dimmerLamp 
 {         
