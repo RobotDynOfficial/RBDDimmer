@@ -37,6 +37,11 @@ When used this libarary better discover pin table
  *  +---------------+-------------------------+-------------------------+
  *  | Arduino Due   | D0-D53                  | D0-D53                  |
  *  +---------------+-------------------------+-------------------------+
+ *  | STM32         | PA0-PA15,PB0-PB15       | PA0-PA15,PB0-PB15       |
+ *  | Black Pill    | PC13-PC15               | PC13-PC15               |
+ *  | BluePill      |                         |                         |
+ *  | Etc...        |                         |                         |
+ *  +---------------+-------------------------+-------------------------+
 
 This library can simplify user code with following functions:
 
