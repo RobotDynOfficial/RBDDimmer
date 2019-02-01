@@ -1,8 +1,4 @@
-﻿
-The following library is used for work with dimmer, it gives ability to control large ammoun of dimmer by the means of hardware timer and external interrupt.
-When used this libarary better discover pin table
-
- <table style="border-collapse: separate;
+<table style="border-collapse: separate;
   border-spacing: 0;
   padding: 5px;">
     <tbody>
@@ -134,6 +130,14 @@ When used this libarary better discover pin table
         <td style="border: 1px solid #bbb; border-bottom: 1px solid #bbb; padding: 10px 15px 10px 15px;"> Arduino Due</td>
         <td style="border: 1px solid #bbb; border-bottom: 1px solid #bbb; padding: 10px 15px 10px 15px;" colspan="2"> D0-D53</td>
         <td style="border: 1px solid #bbb; border-bottom: 1px solid #bbb; padding: 10px 15px 10px 15px;" colspan="2">D0-D53 </td>
+    </tr>
+    <tr>
+        <td style="border: 1px solid #bbb; border-bottom: 1px solid #bbb; padding: 10px 15px 10px 15px;"> STM32 <br> Black Pill
+            <br> Blue Pill <br> Etc...</td>
+        <td style="border: 1px solid #bbb; border-bottom: 1px solid #bbb; padding: 10px 15px 10px 15px;" colspan="2"> PA0-PA15, PB0-15
+            <br> PC13-PC15</td>
+        <td style="border: 1px solid #bbb; border-bottom: 1px solid #bbb; padding: 10px 15px 10px 15px;" colspan="2">PA0-PA15, PB0-15
+            <br> PC13-PC15</td>
     </tr>
     </tbody>
 </table>
