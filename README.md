@@ -134,9 +134,9 @@
     <tr>
         <td style="border: 1px solid #bbb; border-bottom: 1px solid #bbb; padding: 10px 15px 10px 15px;"> STM32 <br> Black Pill
             <br> Blue Pill <br> Etc...</td>
-        <td style="border: 1px solid #bbb; border-bottom: 1px solid #bbb; padding: 10px 15px 10px 15px;" colspan="2"> PA0-PA15, PB0-15
+        <td style="border: 1px solid #bbb; border-bottom: 1px solid #bbb; padding: 10px 15px 10px 15px;" colspan="2"> PA0-PA15, PB0-PB15
             <br> PC13-PC15</td>
-        <td style="border: 1px solid #bbb; border-bottom: 1px solid #bbb; padding: 10px 15px 10px 15px;" colspan="2">PA0-PA15, PB0-15
+        <td style="border: 1px solid #bbb; border-bottom: 1px solid #bbb; padding: 10px 15px 10px 15px;" colspan="2">PA0-PA15, PB0-PB15
             <br> PC13-PC15</td>
     </tr>
     </tbody>
