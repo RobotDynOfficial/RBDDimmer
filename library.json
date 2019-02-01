@@ -1,6 +1,6 @@
 {
   "name": "RBDdimmer",
-  "keywords": "RBDdimmer, dimmer, lamp, AVR,M0, SAM3, ESP8266, ESP32", 
+  "keywords": "RBDdimmer, dimmer, lamp, AVR,M0, SAM3, ESP8266, ESP32, STM32", 
   "description": "Arduino AC-dimming library for AVR, ESP8266, ESP32 processor",
   "repository": {
     "type": "git",
