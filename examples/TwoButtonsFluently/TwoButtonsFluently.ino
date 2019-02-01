@@ -4,7 +4,7 @@
  *  **************
  * The following sketch is meant to smoothly turn the dimmer ON after pressing the first button and turn it OFF after pressing a second one
  * 
- *  ---------------------- OUTPUT & INPUT Pin table ---------------------
+  *  ---------------------- OUTPUT & INPUT Pin table ---------------------
  *  +---------------+-------------------------+-------------------------+
  *  |   Board       | INPUT Pin               | OUTPUT Pin              |
  *  |               | Zero-Cross              |                         |
@@ -38,6 +38,11 @@
  *  | Arduino Zero  |                         |                         |
  *  +---------------+-------------------------+-------------------------+
  *  | Arduino Due   | D0-D53                  | D0-D53                  |
+ *  +---------------+-------------------------+-------------------------+
+ *  | STM32         | PA0-PA15,PB0-15         | PA0-PA15,PB0-15         |
+ *  | Black Pill    | PC13-PC15               | PC13-PC15               |
+ *  | BluePill      |                         |                         |
+ *  | Etc...        |                         |                         |
  *  +---------------+-------------------------+-------------------------+
  */
 
