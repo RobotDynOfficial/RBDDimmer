@@ -5,7 +5,7 @@
  *  The following sketch is meant to define by function the smooth changes of dimming values in a range of values defined by user 
  *  values are defined in range from 0 to 100%
  * 
- *  ---------------------- OUTPUT & INPUT Pin table ---------------------
+  *  ---------------------- OUTPUT & INPUT Pin table ---------------------
  *  +---------------+-------------------------+-------------------------+
  *  |   Board       | INPUT Pin               | OUTPUT Pin              |
  *  |               | Zero-Cross              |                         |
@@ -39,6 +39,11 @@
  *  | Arduino Zero  |                         |                         |
  *  +---------------+-------------------------+-------------------------+
  *  | Arduino Due   | D0-D53                  | D0-D53                  |
+ *  +---------------+-------------------------+-------------------------+
+ *  | STM32         | PA0-PA15,PB0-15         | PA0-PA15,PB0-15         |
+ *  | Black Pill    | PC13-PC15               | PC13-PC15               |
+ *  | BluePill      |                         |                         |
+ *  | Etc...        |                         |                         |
  *  +---------------+-------------------------+-------------------------+
  */
 
