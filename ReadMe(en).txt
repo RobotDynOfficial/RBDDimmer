@@ -7,7 +7,7 @@ When used this libarary better discover pin table
  *  |   Board       | INPUT Pin               | OUTPUT Pin              |
  *  |               | Zero-Cross              |                         |
  *  +---------------+-------------------------+-------------------------+
- *  | Lenardo       | D7 (NOT CHANGABLE)      | D0-D6, D8-D13           |
+ *  | Leonardo       | D7 (NOT CHANGABLE)      | D0-D6, D8-D13           |
  *  +---------------+-------------------------+-------------------------+
  *  | Mega          | D2 (NOT CHANGABLE)      | D0-D1, D3-D70           |
  *  +---------------+-------------------------+-------------------------+
