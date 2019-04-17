@@ -3,7 +3,7 @@
 #include "RBDmcuESP32.h"
 
 
-int pulseWidth = 1;
+int pulseWidth = 10;
 volatile int current_dim = 0;
 int all_dim = 3;
 int rise_fall = true;
@@ -55,7 +55,7 @@ void dimmerLamp::timer_init(void)
 	timerAttachInterrupt(timer, &onTimerISR, true);
 	// Set alarm to call onTimer function every second (value in microseconds).
   	// Repeat the alarm (third parameter)
-  	timerAlarmWrite(timer, 30, true);
+  	timerAlarmWrite(timer, 32, true);
   	// Start an alarm
   	timerAlarmEnable(timer);
 }
@@ -189,7 +189,8 @@ void IRAM_ATTR onTimerISR()
 			if (dimCounter[k] >= dimPulseBegin[k] )
 			{
 				digitalWrite(dimOutPin[k], HIGH);	
-			}
+			} else 
+				digitalWrite(dimOutPin[k], LOW);
 
 			if (dimCounter[k] >=  (dimPulseBegin[k] + pulseWidth) )
 			{
