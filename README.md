@@ -9,17 +9,17 @@
     </tr>
     <tr>
         <td style="border: 1px solid #bbb; border-bottom: 1px solid #bbb; padding: 10px 15px 10px 15px;">Leonardo</td>
-        <td style="border: 1px solid #bbb; border-bottom: 1px solid #bbb; padding: 10px 15px 10px 15px;" colspan="2">D7 (NOT CHANGABLE)</td>
+        <td style="border: 1px solid #bbb; border-bottom: 1px solid #bbb; padding: 10px 15px 10px 15px;" colspan="2">D7 (NOT CHANGEABLE)</td>
         <td style="border: 1px solid #bbb; border-bottom: 1px solid #bbb; padding: 10px 15px 10px 15px;" colspan="2">D0-D6, D8-D13</td>
     </tr>
     <tr>
         <td style="border: 1px solid #bbb; border-bottom: 1px solid #bbb; padding: 10px 15px 10px 15px;">Mega</td>
-        <td style="border: 1px solid #bbb; border-bottom: 1px solid #bbb; padding: 10px 15px 10px 15px;" colspan="2">D2 (NOT CHANGABLE)</td>
+        <td style="border: 1px solid #bbb; border-bottom: 1px solid #bbb; padding: 10px 15px 10px 15px;" colspan="2">D2 (NOT CHANGEABLE)</td>
         <td style="border: 1px solid #bbb; border-bottom: 1px solid #bbb; padding: 10px 15px 10px 15px;" colspan="2">D0-D1, D3-D70</td>
     </tr>
     <tr>
         <td style="border: 1px solid #bbb; border-bottom: 1px solid #bbb; padding: 10px 15px 10px 15px;" >UNO<br>NANO</td>
-        <td style="border: 1px solid #bbb; border-bottom: 1px solid #bbb; padding: 10px 15px 10px 15px;" colspan="2">D2 (NOT CHANGABLE)</td>
+        <td style="border: 1px solid #bbb; border-bottom: 1px solid #bbb; padding: 10px 15px 10px 15px;" colspan="2">D2 (NOT CHANGEABLE)</td>
         <td style="border: 1px solid #bbb; border-bottom: 1px solid #bbb; padding: 10px 15px 10px 15px;" colspan="2">D0-D1, D3-D20</td>
     </tr>
     <tr>
@@ -123,7 +123,7 @@
     </tr>
     <tr>
         <td style="border: 1px solid #bbb; border-bottom: 1px solid #bbb; padding: 10px 15px 10px 15px;">Arduino M0 <br>Arduino Zero</td>
-        <td style="border: 1px solid #bbb; border-bottom: 1px solid #bbb; padding: 10px 15px 10px 15px;" colspan="2">D7 (NOT CHANGABLE)</td>
+        <td style="border: 1px solid #bbb; border-bottom: 1px solid #bbb; padding: 10px 15px 10px 15px;" colspan="2">D7 (NOT CHANGEABLE)</td>
         <td style="border: 1px solid #bbb; border-bottom: 1px solid #bbb; padding: 10px 15px 10px 15px;" colspan="2">D0-D6, D8-D13</td>
     </tr>
     <tr>
@@ -146,8 +146,8 @@ This library can simplify user code with following functions:
 
     1. Function dimmerLamp - this function initializes the number of operating pin and is defined by the user
     Example: 
-        a.dimmerLamp dimmer(4);    dimmer output DIM/PSM is initialized on the pin 4 for the bords WITHOUT changable ZERO-CROSS input pin (AVR, Arduino M0/Zero)
-        b.dimmerLamp dimmer(4, 2);  dimmer output DIM/PSM is initialized on the pin 4 and zero-cross initialized on pin 2. Only for boards whith changable zero-cross(ESP32, ESP8266, Arduino Due)
+        a.dimmerLamp dimmer(4);    dimmer output DIM/PSM is initialized on the pin 4 for the bords WITHOUT changeable ZERO-CROSS input pin (AVR, Arduino M0/Zero)
+        b.dimmerLamp dimmer(4, 2);  dimmer output DIM/PSM is initialized on the pin 4 and zero-cross initialized on pin 2. Only for boards with changeable zero-cross(ESP32, ESP8266, Arduino Due)
 
     2. Function begin port initialization, timer and external interrupt from zero-cross.
     Example:

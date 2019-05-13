@@ -10,11 +10,11 @@
  *  |   Board       | INPUT Pin               | OUTPUT Pin              |
  *  |               | Zero-Cross              |                         |
  *  +---------------+-------------------------+-------------------------+
- *  | Lenardo       | D7 (NOT CHANGABLE)      | D0-D6, D8-D13           |
+ *  | Lenardo       | D7 (NOT CHANGEABLE)      | D0-D6, D8-D13           |
  *  +---------------+-------------------------+-------------------------+
- *  | Mega          | D2 (NOT CHANGABLE)      | D0-D1, D3-D70           |
+ *  | Mega          | D2 (NOT CHANGEABLE)      | D0-D1, D3-D70           |
  *  +---------------+-------------------------+-------------------------+
- *  | Uno           | D2 (NOT CHANGABLE)      | D0-D1, D3-D20           |
+ *  | Uno           | D2 (NOT CHANGEABLE)      | D0-D1, D3-D20           |
  *  +---------------+-------------------------+-------------------------+
  *  | ESP8266       | D1(IO5),    D2(IO4),    | D0(IO16),   D1(IO5),    |
  *  |               | D5(IO14),   D6(IO12),   | D2(IO4),    D5(IO14),   |
@@ -35,7 +35,7 @@
  *  |               | 33(GPIO21), 35(GPIO1),  |                         |
  *  |               | 36(GPIO22), 37(GPIO23), |                         |
  *  +---------------+-------------------------+-------------------------+
- *  | Arduino M0    | D7 (NOT CHANGABLE)      | D0-D6, D8-D13           |
+ *  | Arduino M0    | D7 (NOT CHANGEABLE)      | D0-D6, D8-D13           |
  *  | Arduino Zero  |                         |                         |
  *  +---------------+-------------------------+-------------------------+
  *  | Arduino Due   | D0-D53                  | D0-D53                  |
@@ -49,7 +49,7 @@
 
 #include <RBDdimmer.h>//
 
-//#define USE_SERIAL  SerialUSB //Serial for boards whith USB serial port
+//#define USE_SERIAL  SerialUSB //Serial for boards with USB serial port
 #define USE_SERIAL  Serial
 #define outputPin  12 
 #define zerocross  5 // for boards with CHANGEBLE input pins
