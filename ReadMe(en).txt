@@ -1,17 +1,17 @@
 ﻿
 The following library is used for work with dimmer, it gives ability to control large ammoun of dimmer by the means of hardware timer and external interrupt.
-When used this libarary better discover pin table
+When used this library better discover pin table
 
  *  ---------------------- OUTPUT & INPUT Pin table ---------------------
  *  +---------------+-------------------------+-------------------------+
  *  |   Board       | INPUT Pin               | OUTPUT Pin              |
  *  |               | Zero-Cross              |                         |
  *  +---------------+-------------------------+-------------------------+
- *  | Leonardo       | D7 (NOT CHANGABLE)      | D0-D6, D8-D13           |
+ *  | Leonardo       | D7 (NOT CHANGEABLE)      | D0-D6, D8-D13           |
  *  +---------------+-------------------------+-------------------------+
- *  | Mega          | D2 (NOT CHANGABLE)      | D0-D1, D3-D70           |
+ *  | Mega          | D2 (NOT CHANGEABLE)      | D0-D1, D3-D70           |
  *  +---------------+-------------------------+-------------------------+
- *  | Uno           | D2 (NOT CHANGABLE)      | D0-D1, D3-D20           |
+ *  | Uno           | D2 (NOT CHANGEABLE)      | D0-D1, D3-D20           |
  *  +---------------+-------------------------+-------------------------+
  *  | ESP8266       | D1(IO5),    D2(IO4),    | D0(IO16),   D1(IO5),    |
  *  |               | D5(IO14),   D6(IO12),   | D2(IO4),    D5(IO14),   |
@@ -32,7 +32,7 @@ When used this libarary better discover pin table
  *  |               | 33(GPIO21), 35(GPIO1),  |                         |
  *  |               | 36(GPIO22), 37(GPIO23), |                         |
  *  +---------------+-------------------------+-------------------------+
- *  | Arduino M0    | D7 (NOT CHANGABLE)      | D0-D6, D8-D13           |
+ *  | Arduino M0    | D7 (NOT CHANGEABLE)      | D0-D6, D8-D13           |
  *  | Arduino Zero  |                         |                         |
  *  +---------------+-------------------------+-------------------------+
  *  | Arduino Due   | D0-D53                  | D0-D53                  |
@@ -47,8 +47,8 @@ This library can simplify user code with following functions:
 
     1. Function dimmerLamp - this function initializes the number of operating pin and is defined by the user
     Example: 
-        a.dimmerLamp dimmer(4);    dimmer output DIM/PSM is initialized on the pin 4 for the bords WITHOUT changable ZERO-CROSS input pin (AVR, Arduino M0/Zero)
-        b.dimmerLamp dimmer(4, 2);  dimmer output DIM/PSM is initialized on the pin 4 and zero-cross initialized on pin 2. Only for boards whith changable zero-cross(ESP32, ESP8266, Arduino Due)
+        a.dimmerLamp dimmer(4);    dimmer output DIM/PSM is initialized on the pin 4 for the bords WITHOUT changeable ZERO-CROSS input pin (AVR, Arduino M0/Zero)
+        b.dimmerLamp dimmer(4, 2);  dimmer output DIM/PSM is initialized on the pin 4 and zero-cross initialized on pin 2. Only for boards with changeable zero-cross(ESP32, ESP8266, Arduino Due)
 
     2. Function begin port initialization, timer and external interrupt from zero-cross.
     Example:
