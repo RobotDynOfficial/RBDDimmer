@@ -23,8 +23,8 @@ toggleSettings	KEYWORD2
 #######################################
 # Constants (LITERAL1)
 #######################################
-ON  LITERAL1
-OFF LITERAL1
+ON	LITERAL1
+OFF	LITERAL1
 NORMAL_MODE	LITERAL1
 TOGGLE_MODE	LITERAL1
 
