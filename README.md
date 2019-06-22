@@ -185,3 +185,8 @@ This library can simplify user code with following functions:
   
     10. Function toggleSettings smooth change of dimming value up or down in a defined range
         Example located in \RBDdimmer\examples\SimpleToggleDimmer
+
+## Notes and Clarifications
+  1. The zero-cross pin is always required, but on some boards it must be a specific pin. It is not required in the constructor because it is already hard-coded to the specific pin.
+  2. `dimmer.begin()` should be called inside of Arduino's setup() function, otherwise it might cause unexpected behaviour.
+  3. When everything is set up correctly, an LED on the ACDimmer will light up only when the ACDimmer is connected to an AC power source AND the dimmer state is not OFF.
