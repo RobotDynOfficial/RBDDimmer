@@ -1,3 +1,5 @@
+
+## Arundio I/O instruction table 
 <table style="border-collapse: separate;
   border-spacing: 0;
   padding: 5px;">
@@ -142,7 +144,7 @@
     </tbody>
 </table>
 
-This library can simplify user code with following functions:
+### This library can simplify user code with following functions:
 
     1. Function dimmerLamp - this function initializes the number of operating pin and is defined by the user
     Example: 
