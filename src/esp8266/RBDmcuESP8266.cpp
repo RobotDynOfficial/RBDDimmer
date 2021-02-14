@@ -58,7 +58,7 @@ void dimmerLamp::ext_int_init(void)
 {
 	int inPin = dimZCPin[this->current_num];
 	pinMode(inPin, INPUT_PULLUP);
-	attachInterrupt(inPin, isr_ext, FALLING);
+	attachInterrupt(digitalPinToInterrupt(inPin), isr_ext, FALLING);
 }
 
 
