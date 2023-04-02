@@ -47,6 +47,9 @@ dimmerLamp::dimmerLamp(int user_dimmer_pin, int zc_dimmer_pin):
 
 void dimmerLamp::timer_init(void)
 {
+	// only init timer once, regardless of how many dimmers
+	if (current_num < 1) 
+	{
 	hw_timer_t * timer = NULL;
 	// Use 1st timer of 4 (counted from zero).
   	// Set 80 divider for prescaler (see ESP32 Technical Reference Manual for more info).
@@ -58,6 +61,7 @@ void dimmerLamp::timer_init(void)
   	timerAlarmWrite(timer, 30, true);
   	// Start an alarm
   	timerAlarmEnable(timer);
+	}
 }
 
 void dimmerLamp::ext_int_init(void) 
