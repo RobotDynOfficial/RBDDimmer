@@ -29,8 +29,8 @@ typedef enum
 
 typedef enum
 {
-    OFF = false,
-    ON = true
+    RBD_OFF = false,
+    RBD_ON = true
 } ON_OFF_typedef;
 
 #define ALL_DIMMERS 30
