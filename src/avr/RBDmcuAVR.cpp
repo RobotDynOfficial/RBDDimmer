@@ -108,7 +108,7 @@ void dimmerLamp::setPower(int power)
 
 int dimmerLamp::getPower(void)
 {
-	if (dimState[this->current_num] == ON)
+	if (dimState[this->current_num] == RBD_ON)
 		return dimPower[this->current_num];
 	else return 0;
 }
@@ -121,16 +121,16 @@ void dimmerLamp::setState(ON_OFF_typedef ON_OFF)
 bool dimmerLamp::getState(void)
 {
 	bool ret;
-	if (dimState[this->current_num] == ON) ret = true;
+	if (dimState[this->current_num] == RBD_ON) ret = true;
 	else ret = false;
 	return ret;
 }
 
 void dimmerLamp::changeState(void)
 {
-	if (dimState[this->current_num] == ON) dimState[this->current_num] = OFF;
+	if (dimState[this->current_num] == RBD_ON) dimState[this->current_num] = RBD_OFF;
 	else 
-		dimState[this->current_num] = ON;
+		dimState[this->current_num] = RBD_ON;
 }
 
 DIMMER_MODE_typedef dimmerLamp::getMode(void)
@@ -163,7 +163,7 @@ void dimmerLamp::toggleSettings(int minValue, int maxValue)
 ISR(INT_vect)
 {
 	for (int i = 0; i < current_dim; i++ ) 
-		if (dimState[i] == ON) 
+		if (dimState[i] == RBD_ON) 
 		{
 			zeroCross[i] = 1;
 		}
